@@ -1,19 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="24dp">
 
+    <!-- Teks -->
     <TextView
+        android:id="@+id/tvJudul"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="hello world"
+        android:textSize="30sp"
+        android:bord
+        android:background="@color/black"
+        android:layout_marginBottom="20px"
+        android:textStyle="bold
+        android:textColor="#1565C0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saya akan "
+        android:textSize="32sp"
+        android:textStyle="bold|italic"
+        android:textColor="#FFFFFF"
+        android:background="#1565C0"
+        android:padding="0.5dp"
+        android:gravity="center"
+        android:letterSpacing="0.05" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="saya akan \n lawan \t sdsdsds \t\t\tsdsd"
+    <!-- Kolom input -->
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Ketik namamu disini" />
+
+    <!-- Tombol -->
+    <Button
+        android:id="@+id/btnSapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Sapa Aku" />
+
+    <!-- Hasil -->
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text=""
+        android:textSize="20sp" />
+
+</LinearLayout>
